@@ -13,6 +13,8 @@ sudo docker run -it \
     --table_name=yellow_taxi_trips \
     --url=${URL}
 
+sudo chown 5050:5050 local_pgdata
+sudo chown 5050:5050 pgadmin-data
 -----------------------------------------------------------
 
 sudo docker-compose up
